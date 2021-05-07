@@ -52,7 +52,7 @@ def ma7(crypto):
 def ma21(crypto):
     return crypto.Close.rolling(21).mean()
     
-def momentum2(data, n_days):
+def momentum(data, n_days):
     m = [None for i in range(n_days)]    
     for i in range(len(data) - n_days):
         end = i + n_days
