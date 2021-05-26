@@ -1,7 +1,8 @@
-
+import seaborn as sns
+import pandas as pd
+import numpy as np 
 def to_sequences(data, seq_len):
     d = []
-    import numpy as np
     for index in range(len(data) - seq_len):
         d.append(data[index: index + seq_len])
 
